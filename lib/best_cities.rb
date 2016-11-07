@@ -1,4 +1,4 @@
-require "best_cities/version"
+require_relative '../config/environment.rb'
 
 module BestCities
   # Your code goes here...
