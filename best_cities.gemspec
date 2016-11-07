@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
 
-  spec.files         = ["lib/best_cities.rb", "lib/best_cities/cli.rb", "lib/best_cities/city.rb", "lib/best_cities/scraper.rb", "lib/best_cities/version.rb"]
+  spec.files         = ["lib/best_cities.rb", "config/environment.rb","lib/best_cities/cli.rb", "lib/best_cities/city.rb", "lib/best_cities/scraper.rb", "lib/best_cities/version.rb"]
 
   spec.bindir        = "bin"
   spec.executables   = "best_cities_america"
