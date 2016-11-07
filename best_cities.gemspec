@@ -5,7 +5,7 @@ require 'best_cities/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "best_cities"
-  spec.version       = BestCities::VERSION
+  spec.version       = BestCity::VERSION
   spec.authors       = ["bharti gurnaney"]
   spec.email         = ["bharti0717@yahoo.com"]
 
@@ -14,17 +14,9 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/bhartiRA/best_cities_CLI_app"
   spec.license       = "MIT"
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
 
-  spec.files         = ["lib/best_cities.rb", "lib/best_cities/cli.rb", "lib/best_cities/game.rb", "lib/best_cities/scraper.rb", "lib/best_cities/version.rb"]
-  end
+  spec.files         = ["lib/best_cities.rb", "lib/best_cities/cli.rb", "lib/best_cities/city.rb", "lib/best_cities/scraper.rb", "lib/best_cities/version.rb"]
+
   spec.bindir        = "bin"
   spec.executables   = "best_cities_america"
   spec.require_paths = ["lib"]
