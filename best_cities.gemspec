@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["bharti gurnaney"]
   spec.email         = ["bharti0717@yahoo.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Best places to live in America 2016}
+  spec.description   = %q{With this gem you can see 50 Best places to live in america 2016 and see the detail of any city}
+  spec.homepage      = "https://github.com/bhartiRA/best_cities_CLI_app"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -23,13 +23,15 @@ Gem::Specification.new do |spec|
       "public gem pushes."
   end
 
-  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
-    f.match(%r{^(test|spec|features)/})
+  spec.files         = ["lib/best_cities.rb", "lib/best_cities/cli.rb", "lib/best_cities/game.rb", "lib/best_cities/scraper.rb", "lib/best_cities/version.rb"]
   end
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.bindir        = "bin"
+  spec.executables   = "best_cities_america"
   spec.require_paths = ["lib"]
 
+  spec.add_development_dependency "nokogiri", "~> 1.6"
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "pry", "~> 0"
 end
