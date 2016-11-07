@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.files         = ["lib/best_cities.rb", "config/environment.rb","lib/best_cities/cli.rb", "lib/best_cities/city.rb", "lib/best_cities/scraper.rb", "lib/best_cities/version.rb"]
 
   spec.bindir        = "bin"
-  spec.executables   = "best_cities_america"
+  spec.executables   = "best_cities"
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "nokogiri", "~> 1.6"
