@@ -1,0 +1,27 @@
+#Ruby CLI gem Project
+
+I want to share my experience while developing Ruby CLI Gem project.
+
+For this project I had to take a website and scrape it, using open uri and Nokogiri gem. I chose a site but was not able to scrape it, as I was getting forbidden 403 error. So I chose a different site. 
+
+I chose a site from where I got the information about 50 best places in live in America 2016, and this site was easy to scrape.
+
+I had to use objects and develop a cli. This was easy as there were only 3  objects required, city for storing the city information , scraping object called scraper where I used nokogiri to scrape  and cli object for interaction with the user.
+
+The challenging part was using git to save and creating ruby gems, because till now we have used LEARN IDE to save to git. With some effort and reading the previous topic on git, I was able to do it.
+
+I also compelted making my project into a gem and this is the link to it. https://rubygems.org/gems/best_cities
+It can be run with this
+1)gem install best_cities
+2) best_cities
+
+
+The steps for creating a ruby gem :
+1) bundle gem <project name> -: This is the first step for creating the project. This will create the required structure for the project with the gemspec file
+
+After the project is done  and the gemspec file has been updated and the project is pushed to github
+
+2)  gem build <projectname>.gemspec
+3)  gem push <gemname> 
+
+This was a good learning experience where I got to revise  everything we had learnt upto now, in addition to learning how to create a ruby gem.
